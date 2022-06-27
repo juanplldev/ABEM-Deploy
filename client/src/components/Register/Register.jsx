@@ -33,7 +33,7 @@ function Register()
         const foundUsername = users.filter(e => e.name === input.name);
         const foundEmail = users.filter(e => e.email === input.email);
         const foundDni = users.filter(e => e.dni === input.dni);
-        console.log(foundUsername);
+        
         if(!input.name)
         {
             errors.name = <font color="red">*</font>;
