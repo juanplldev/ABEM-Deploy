@@ -18,8 +18,8 @@ function App() {
         <Route exact path="/register" element={<Register/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/profile" element={<Profile/>} />
-        <Route exact path="/forgot" element={<ForgotPassword/>} />
-        <Route exact path="/reset/:id" element={<ResetPassword/>} />
+        {/* <Route exact path="/forgot" element={<ForgotPassword/>} /> */}
+        {/* <Route exact path="/reset/:id" element={<ResetPassword/>} /> */}
         <Route exact path="/payout" element={<ViewSpreadsheet/>} />
         <Route exact path="/allpayouts" element={<ViewAllSpreadsheets/>} />
       </Routes>
