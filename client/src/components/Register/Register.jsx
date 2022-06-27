@@ -95,17 +95,18 @@ function Register()
         setPassword(password => !password);
     };
     
-    function handleSubmit(e)
+    async function handleSubmit(e)
     {
         if(Object.keys(validate(input)).length > 0)
         {
             e.preventDefault();
-            swal("All fields are required.");
+            swal("Please fill all fields correctly.");
         }
         else
         {
             e.preventDefault();
-            dispatch(register(input));
+            await dispatch(register(input));
+            await (dispatch(getUsers()));
             setInput({
                 name: "",
                 dni: "",
